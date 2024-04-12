@@ -1,0 +1,1755 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- title -->
+    <title>FE CREDIT - VAY TIÊU DÙNG TÍN CHẤP</title>
+    <!-- ANTS Insight meta -->
+    <meta name="adx:sections" content="FE CREDIT" />
+    <meta name="facebook-domain-verification" content="j5rqk4ieewgm9lhmj0np2xj2hwjhce" />
+    <!-- End of ANTS Insight meta -->
+    <!-- favicon -->
+    <link type="image/x-icon" rel="shortcut icon" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/favicon/favicon.png">
+    <link rel="icon" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/favicon/fe-32x32.jpg" sizes="32x32" />
+    <link rel="icon" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/favicon/fe-192x192.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/favicon/fe-180x180.jpg" />
+    <meta name="msapplication-TileImage" content="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/favicon/fe-270x270.jpg" />
+    <!-- description -->
+    <meta name="description"
+          content="FE CREDIT tự hào là công ty tài chính đầu ngành đã và đang phục vụ hàng triệu người dân Việt Nam qua các sản phẩm và dịch vụ cho vay tiêu dùng, vay tín chấp của mình." />
+    <!-- keywords -->
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://fecredit.com.vn/" />
+    <link rel="next" href="https://fecredit.com.vn/page/2/" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FE CREDIT - VAY TIÊU DÙNG TÍN CHẤP" />
+    <meta property="og:description"
+          content="Là công ty tài chính đầu ngành với hơn 15.000 nhân viên và đối tác trải dài khắp 63 tỉnh thành trên toàn quốc, phục vụ hàng triệu người dân Việt Nam qua các sản phẩm và dịch vụ cho vay tín chấp của mình." />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="FE CREDIT" />
+    <meta property="og:image" content="https://fecredit.com.vn/wp-content/uploads/2016/11/FACEBOOK-FE-CREDIT.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="alternate" href="https://fecredit.com.vn/" hreflang="vi" />
+    <link rel="alternate" href="https://fecredit.com.vn/en/" hreflang="en" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/css/bootstrap.min.css" />
+    <!-- <link rel="preload" as="font" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />  -->
+    <link rel="stylesheet" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/css/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/css/slick.min.css" />
+    <!-- <link rel="stylesheet" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/scss/style.min.css" /> -->
+    <link rel="stylesheet" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/css/subcripe-form.css" />
+    <link rel="stylesheet" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/scss/style.css" />
+    <script src='https://www.google.com/recaptcha/api.js?hl=vi'></script>
+    <style>
+        .modal1 {
+            display:    none;
+            position:   fixed;
+            z-index:    9999;
+            top:        0;
+            left:       0;
+            height:     100%;
+            width:      100%;
+            background: rgba( 255, 255, 255, .8 )
+            url('https://fecredit.com.vn/wp-content/themes/fe-credit/images/loading_gif.gif')
+            50% 50%
+            no-repeat;
+        }
+
+        /* When the body has the loading class, we turn
+           the scrollbar off with overflow:hidden */
+        body.loading {
+            overflow: hidden;
+        }
+
+        /* Anytime the body has the loading class, our
+           modal element will be visible */
+        body.loading .modal1 {
+            display: block;
+        }
+
+        img.lazy {
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        img[data-src] {
+            opacity: 0;
+        }
+
+        .main-selects-issua-tabs-content {
+            position: relative;
+        }
+
+        .main-selects-issua-tabs-content .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .main-selects-issua-tabs-content .modal .modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.2;
+        }
+
+        .main-selects-issua-tabs-content .modal .modal-box {
+            width: 500px;
+            height: 429px;
+            background-color: #e2eaef;
+            background-image: linear-gradient(#fafbfd, #e1e9ef);
+            border: 5px solid white;
+            border-radius: 20px;
+            margin: 44px auto;
+            z-index: 25;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 10;
+        }
+
+        .main-selects-issua-tabs-content .modal .modal-box .content {
+            text-align: center;
+        }
+
+        .main-selects-issua-tabs-content .modal .modal-box .img-holder {
+            max-width: 200px;
+        }
+
+        .main-selects-issua-tabs-content .modal .modal-box .close-ico {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .modal.modal-interract .modal-overlay.active {
+            display: none;
+        }
+
+        .modal.active {
+            display: none;
+        }
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '481952802148982'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+        fbq('init', '1570364083168045'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=481952802148982&ev=PageView&noscript=1"/></noscript>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1570364083168045&ev=PageView&noscript=1"/></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-41425201-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+    <!-- Google Analytics -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KKCZCW');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Code for Remarketing Tag -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 851991714;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/851991714/?guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+    <!-- Google Code for Remarketing Tag -->
+
+    <script type='text/javascript' id='rsyswpsdk' src='https://api.pushio.com/webpush/sdk/wpIndex_min.js' wpconfig = '{"appserviceKey":"BNvgxvz55wfsgF1sIGfD16tfU7BpRJTn6V87D4vGw5mvbSvIuMdq7Thpm7Q0w3pnWZWtimDq3jKfuypCuauYqa4=","apiKey":"ABEuxdbBQRUFuRwWxnGpJvl4c","accountToken":"ABEtqAqQ4K843bc6hSQQTqRpA","appver":"0.0.0","apiHost":"https://vjr1qya-webpush.oraclersys.com","lazy":false}'></script>
+</head>
+
+<body class="">
+<div id="header">
+    <!-- Top banner -->
+    <div class="head-banner" style="background-color: #eafee6">
+        <!-- button close banner mobile -->
+        <button type="button" class="close btn-close-banner" aria-label="Close">
+                <span aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                        <path fill="#283847" fill-rule="evenodd"
+                              d="M4.087 4L7.52.569A.21.21 0 0 0 7.22.27L3.789 3.702.36.27A.21.21 0 0 0 .06.568L3.492 4 .06 7.431a.21.21 0 0 0 .298.299L3.79 4.298l3.432 3.431a.21.21 0 1 0 .298-.297L4.087 4z">
+                        </path>
+                    </svg>
+
+                </span>
+        </button>
+        <!--  top banner image -->
+        <a href="https://fecredit.com.vn/category/goc-canh-giac/">
+            <img class="hidden-mobile" src="https://fecredit.com.vn/wp-content/uploads/2023/04/20230324_FraudBanner_desktop-1.png" alt="banner-snap-top" >
+            <img class="hidden-desktop" src="https://fecredit.com.vn/wp-content/uploads/2023/04/20230324_FraudBanner_mobile-1.png" alt="banner-snap-top-mobile" >
+        </a>
+    </div>
+    <!-- Start Header Menu  -->
+
+    <nav class="navbar main-nav navbar-expand-lg section-row" id="">
+        <div class="container">
+            <a class="navbar-brand " href="https://fecredit.com.vn">
+                <img width="93" height="15" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/logo-vn.png" alt="" />
+            </a>
+            <!-- dang ky btn mobile   -->
+            <ul class="dang-ky-vay-dropdown hidden-desktop ml-auto">
+                <a id="btn-dang-ky-vay-dropdown" href="javascript:void(0)" class="btn-site-default btn-dang-ky-vay-dropdown">Đăng ký</a>
+                <div class="dang-ky-vay-dropdown-menu">
+                    <a class="dropdown-item" href="https://fecredit.com.vn/vay-tien-mat-2/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-1.png" alt="#">
+                        Vay tiền mặt                        </a>
+                    <a class="dropdown-item" href="https://fecredit.com.vn/mo-the-tin-dung/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-2.png" alt="#">
+                        Mở thẻ tín dụng                        </a>
+                    <a class="dropdown-item" href="https://baohiem.fecredit.com.vn/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-5.png" alt="#">
+                        Bảo hiểm                        </a>
+                </div>
+            </ul>
+            <!-- choose lanuage   -->
+            <ul class="lang-header">
+                <select name="lang_choice_1" id="lang_choice_1">
+                    <option value="vi" selected='selected'>vi</option>
+                    <option value="en">en</option>
+
+                </select>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var urls_1 = {"vi":"https:\/\/fecredit.com.vn\/","en":"https:\/\/fecredit.com.vn\/en\/homepage\/"};
+                    document.getElementById( "lang_choice_1" ).onchange = function() {
+                        location.href = urls_1[this.value];
+                    }
+                    //]]>
+                </script>            </ul>
+            <!-- search icon   -->
+            <div class="icon">
+                <a class="" href="#" id="search-btn-show1024">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="#283847" fill-rule="evenodd" d="M15.805 14.862l-4.55-4.55a6.303 6.303 0 0 0 1.412-3.979A6.34 6.34 0 0 0 6.333 0 6.34 6.34 0 0 0 0 6.333a6.34 6.34 0 0 0 6.333 6.334c1.507 0 2.89-.531 3.979-1.412l4.55 4.55a.665.665 0 0 0 .943 0 .666.666 0 0 0 0-.943zm-9.472-3.529c-2.757 0-5-2.242-5-5 0-2.757 2.243-5 5-5 2.758 0 5 2.243 5 5 0 2.758-2.242 5-5 5z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <!-- buton hambuger menu   -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="#008848" fill-rule="evenodd" d="M15.667 12.667a.333.333 0 0 1 0 .666H.333a.333.333 0 0 1 0-.666zm0-4.667a.333.333 0 0 1 0 .667H.333a.333.333 0 0 1 0-.667zm0-4.667a.333.333 0 0 1 0 .667H.333a.333.333 0 0 1 0-.667z" />
+                    </svg>
+                </span>
+            </button>
+            <!-- Navigation -->
+
+            <!-- dang ky btn desktop  -->
+            <ul class="dang-ky-vay-dropdown hidden-mobile">
+                <a id="btn-dang-ky-vay-dropdown" href="javascript:void(0)"
+                   class="btn-site-default btn-dang-ky-vay-dropdown">Đăng ký ngay</a>
+                <div class="dang-ky-vay-dropdown-menu">
+                    <a class="dropdown-item" href="https://fecredit.com.vn/vay-tien-mat-2/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-1.png" alt="#">
+                        Vay tiền mặt                        </a>
+                    <a class="dropdown-item" href="https://fecredit.com.vn/mo-the-tin-dung/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-2.png" alt="#">
+                        Mở thẻ tín dụng                        </a>
+                    <a class="dropdown-item" href="https://baohiem.fecredit.com.vn/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-5.png" alt="#">
+                        Bảo hiểm                        </a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar main-nav navbar-expand-lg" id="">
+        <div class="container">
+            <a class="navbar-brand " href="https://fecredit.com.vn">
+                <img width="93" height="15" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/logo-vn.png" alt="" />
+            </a>
+            <!-- dang ky btn mobile   -->
+            <ul class="dang-ky-vay-dropdown hidden-desktop ml-auto">
+                <a id="btn-dang-ky-vay-dropdown" href="javascript:void(0)" class="btn-site-default btn-dang-ky-vay-dropdown">Đăng ký</a>
+                <div class="dang-ky-vay-dropdown-menu">
+                    <a class="dropdown-item" href="https://fecredit.com.vn/vay-tien-mat-2/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-1.png" alt="#">
+                        Vay tiền mặt                        </a>
+                    <a class="dropdown-item" href="https://fecredit.com.vn/mo-the-tin-dung/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-2.png" alt="#">
+                        Mở thẻ tín dụng                        </a>
+                    <a class="dropdown-item" href="https://baohiem.fecredit.com.vn/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-5.png" alt="#">
+                        Bảo hiểm                        </a>
+                </div>
+            </ul>
+            <!-- choose lanuage   -->
+            <ul class="lang-header">
+                <select name="lang_choice_2" id="lang_choice_2">
+                    <option value="vi" selected='selected'>vi</option>
+                    <option value="en">en</option>
+
+                </select>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var urls_2 = {"vi":"https:\/\/fecredit.com.vn\/","en":"https:\/\/fecredit.com.vn\/en\/homepage\/"};
+                    document.getElementById( "lang_choice_2" ).onchange = function() {
+                        location.href = urls_2[this.value];
+                    }
+                    //]]>
+                </script>            </ul>
+            <!-- search icon   -->
+            <div class="icon">
+                <a class="" href="#" id="search-btn-show">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="#283847" fill-rule="evenodd" d="M15.805 14.862l-4.55-4.55a6.303 6.303 0 0 0 1.412-3.979A6.34 6.34 0 0 0 6.333 0 6.34 6.34 0 0 0 0 6.333a6.34 6.34 0 0 0 6.333 6.334c1.507 0 2.89-.531 3.979-1.412l4.55 4.55a.665.665 0 0 0 .943 0 .666.666 0 0 0 0-.943zm-9.472-3.529c-2.757 0-5-2.242-5-5 0-2.757 2.243-5 5-5 2.758 0 5 2.243 5 5 0 2.758-2.242 5-5 5z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <!-- buton hambuger menu   -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="#008848" fill-rule="evenodd" d="M15.667 12.667a.333.333 0 0 1 0 .666H.333a.333.333 0 0 1 0-.666zm0-4.667a.333.333 0 0 1 0 .667H.333a.333.333 0 0 1 0-.667zm0-4.667a.333.333 0 0 1 0 .667H.333a.333.333 0 0 1 0-.667z" />
+                    </svg>
+                </span>
+            </button>
+            <!-- Navigation -->
+
+            <div id="navbarResponsive" class="collapse navbar-collapse"><ul id="menu-top-menu" class="nav navbar-nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li  id="menu-item-12431" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-12431 nav-item"><a href="#" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12431"><span itemprop="name">Về FE CREDIT</span></a>
+                <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12431">
+                    <li  id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96 nav-item"><a itemprop="url" href="https://fecredit.com.vn/ve-chung-toi/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/group-team-company-teamwork.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Về chúng tôi</span></span></a></li>
+                    <li  id="menu-item-312265" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-312265 nav-item"><a itemprop="url" href="https://tuyendung.fecredit.com.vn/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/black.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Tuyển dụng</span></span></a></li>
+                </ul>
+            </li>
+                <li  id="menu-item-607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-607 nav-item"><a href="#" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-607"><span itemprop="name">Sản phẩm</span></a>
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-607">
+                        <li  id="menu-item-252537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252537 nav-item"><a itemprop="url" href="https://fecredit.com.vn/uu-dai-tien-mat/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="36" height="36" src="https://fecredit.com.vn/wp-content/uploads/2020/03/vay-tien-mat-2-on-white-solid@2x-1-36x36.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Vay tiền mặt <img src='https://fecredit.com.vn/wp-content/uploads/2023/06/lua-36x36-1.png' /></span></span></a></li>
+                        <li  id="menu-item-1358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1358 nav-item"><a itemprop="url" href="https://fecredit.com.vn/the-tin-dung/so-sanh-the/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="36" height="36" src="https://fecredit.com.vn/wp-content/uploads/2020/03/the-tin-dung-on-white-solid@2x-36x36.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Thẻ tín dụng <img src='https://fecredit.com.vn/wp-content/uploads/2023/06/lua-36x36-1.png' /></span></span></a></li>
+                        <li  id="menu-item-60811" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-60811 nav-item"><a itemprop="url" href="https://izion24.com.vn/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="36" height="36" src="https://fecredit.com.vn/wp-content/uploads/2020/03/bao-hiem-lien-ket-on-white-solid-copy-1@2x-36x36.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Mua bảo hiểm <img src='https://fecredit.com.vn/wp-content/uploads/2023/06/lua-36x36-1.png' /></span></span></a></li>
+                        <li  id="menu-item-355373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-355373 nav-item"><a itemprop="url" href="https://fecredit.com.vn/vay-mua-xe-may/uu-diem-san-pham/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="36" height="36" src="https://fecredit.com.vn/wp-content/uploads/2020/03/vay-mua-xe-2-on-white-solid@2x-36x36.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title"><strong>Vay mua xe máy</strong></span></span></a></li>
+                        <li  id="menu-item-355374" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-355374 nav-item"><a itemprop="url" href="https://fecredit.com.vn/vay-mua-dien-thoai-dien-may/uu-diem-san-pham/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="36" height="36" src="https://fecredit.com.vn/wp-content/uploads/2023/09/menu-icon-3-36x36.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title"><strong>Vay mua điện thoại &#8211; điện máy</strong></span></span></a></li>
+                    </ul>
+                </li>
+                <li  id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107 nav-item"><a itemprop="url" href="https://fecredit.com.vn/khuyen-mai/" class="nav-link"><span itemprop="name">Khuyến mãi</span></a></li>
+                <li  id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108 nav-item"><a itemprop="url" href="https://fecredit.com.vn/tin-tuc/" class="nav-link"><span itemprop="name">Tin Tức</span></a></li>
+                <li  id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-109 nav-item"><a href="#" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-109"><span itemprop="name">Hỏi đáp</span></a>
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-109">
+                        <li  id="menu-item-11458" class="menu-item menu-item-type-taxonomy menu-item-object-catfaq menu-item-11458 nav-item"><a itemprop="url" href="https://fecredit.com.vn/cau-hoi/dang-ky-vay-moi/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/black-2.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Những câu hỏi thường gặp</span></span></a></li>
+                        <li  id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360 nav-item"><a itemprop="url" href="https://fecredit.com.vn/tu-van/meo-tai-chinh-tieu-dung/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/black-1.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Mẹo tài chính tiêu dùng</span></span></a></li>
+                        <li  id="menu-item-1685" class="menu-item menu-item-type-taxonomy menu-item-object-thong-tin-lien-lac menu-item-1685 nav-item"><a itemprop="url" href="https://fecredit.com.vn/thong-tin-lien-lac/tu-van/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/call-phone.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Thông tin liên lạc</span></span></a></li>
+                    </ul>
+                </li>
+                <li  id="menu-item-143844" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143844 nav-item"><a itemprop="url" href="https://fecredit.com.vn/danh-cho-nha-dau-tu/" class="nav-link"><span itemprop="name">Đầu tư</span></a></li>
+                <li  id="menu-item-843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-843 nav-item"><a href="#" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-843"><span itemprop="name">Tra cứu &#8211; Thanh toán</span></a>
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-843">
+                        <li  id="menu-item-837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-837 nav-item"><a itemprop="url" href="https://fecredit.com.vn/tra-cuu-thong-tin-thanh-toan/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/black-4.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Tra cứu thông tin thanh toán</span></span></a></li>
+                        <li  id="menu-item-29690" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29690 nav-item"><a itemprop="url" href="http://card.fecredit.com.vn/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/black-1-1.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Tra cứu sao kê thẻ tín dụng</span></span></a></li>
+                        <li  id="menu-item-1877" class="menu-item menu-item-type-post_type menu-item-object-lookup menu-item-1877 nav-item"><a itemprop="url" href="https://fecredit.com.vn/tra-cuu/tra-cuu-thong-tin-qua-tin-nhan/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/black-2-1.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Tra cứu SMS</span></span></a></li>
+                        <li  id="menu-item-3908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3908 nav-item"><a itemprop="url" href="https://fecredit.com.vn/huong-dan-thanh-toan-truc-tuyen/qua-payoo/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/financial-care-money-payment-bag-lot.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Thanh toán trực tuyến</span></span></a></li>
+                        <li  id="menu-item-160706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160706 nav-item"><a itemprop="url" href="/tra-cuu/dia-diem-thanh-toan-va-giai-ngan/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/black-3.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Tìm điạ điểm thanh toán/ giải ngân</span></span></a></li>
+                        <li  id="menu-item-13947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13947 nav-item"><a itemprop="url" href="https://fecredit.com.vn/huong-dan-thanh-toan/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/03/black-2.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Hướng dẫn thanh toán</span></span></a></li>
+                        <li  id="menu-item-316512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-316512 nav-item"><a itemprop="url" href="https://fecredit.com.vn/yeu-cau-va-khieu-nai/khoan-vay/" class="dropdown-item menu-image-title-after menu-image-not-hovered"><span itemprop="name"><img width="1" height="1" src="https://fecredit.com.vn/wp-content/uploads/2020/08/tracuu.svg" class="menu-image menu-image-title-after" alt="" loading="lazy" /><span class="menu-image-title-after menu-image-title">Gửi yêu cầu &#038; khiếu nại</span></span></a></li>
+                    </ul>
+                </li>
+            </ul></div>            <!-- dang ky btn desktop  -->
+            <ul class="dang-ky-vay-dropdown hidden-mobile">
+                <a id="btn-dang-ky-vay-dropdown" href="javascript:void(0)"
+                   class="btn-site-default btn-dang-ky-vay-dropdown">Đăng ký ngay</a>
+                <div class="dang-ky-vay-dropdown-menu">
+                    <a class="dropdown-item" href="https://fecredit.com.vn/vay-tien-mat-2/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-1.png" alt="#">
+                        Vay tiền mặt                        </a>
+                    <a class="dropdown-item" href="https://fecredit.com.vn/mo-the-tin-dung/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-2.png" alt="#">
+                        Mở thẻ tín dụng                        </a>
+                    <a class="dropdown-item" href="https://baohiem.fecredit.com.vn/">
+                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/menu-icon-5.png" alt="#">
+                        Bảo hiểm                        </a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- Search form -->
+    <div id="site-form-search" class="header-form-search">
+        <div class="container">
+            <form action="https://fecredit.com.vn" role="search">
+                <input type="search" placeholder="Nhập nội dung cần tìm và gõ Enter" value="" name="s" title="Tìm kiếm:" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</div>    <div id="main">
+    <!-- Main banner section -->
+<!--    <section class="home-banner">-->
+<!--        <ul id="home-banner">-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2024/01/Mega-TET-Social-post-1176x364-1.jpg">-->
+<!--                <a href="https://bit.ly/MegaTet2024">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2024/01/Mega-TET-Social-post-1176x364-1.jpg" data-lazy="https://fecredit.com.vn/wp-content/uploads/2024/01/Mega-TET-Social-post-1176x364-1.jpg" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2024/01/Mega-TET-Social-post-608x448-2.jpg" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2022/10/202401-CDL-Mega-Quay-la-trung-Website_1147x364_logo.jpg">-->
+<!--                <a href="https://bit.ly/cdllucky">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2022/10/202401-CDL-Mega-Quay-la-trung-Website_1147x364_logo.jpg" data-lazy="https://fecredit.com.vn/wp-content/uploads/2022/10/202401-CDL-Mega-Quay-la-trung-Website_1147x364_logo.jpg" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2022/10/202401-CDL-Mega-Quay-la-trung-Website_608x448.jpg" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2024/01/202312-Mega-TET-CDL-1176x364-1.jpg">-->
+<!--                <a href="https://bit.ly/49cuTsf">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2024/01/202312-Mega-TET-CDL-1176x364-1.jpg" data-lazy="https://fecredit.com.vn/wp-content/uploads/2024/01/202312-Mega-TET-CDL-1176x364-1.jpg" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2024/01/202312-Mega-TET-CDL-608x448-2.jpg" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2024/02/202401-Tet-sum-vay-Tien-mat-trao-tay-1147x364-1.jpg">-->
+<!--                <a href="https://bit.ly/WEBSITE-ARTICLE">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2024/02/202401-Tet-sum-vay-Tien-mat-trao-tay-1147x364-1.jpg" data-lazy="https://fecredit.com.vn/wp-content/uploads/2024/02/202401-Tet-sum-vay-Tien-mat-trao-tay-1147x364-1.jpg" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2024/02/202401-Tet-sum-vay-Tien-mat-trao-tay-608x448-1.jpg" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2022/10/20221010_Lekyket_10k_1176x364.png">-->
+<!--                <a href="https://fecredit.com.vn/fe-credit-hop-tac-tong-lien-doan-lao-dong-viet-nam-trien-khai-goi-vay-uu-dai/">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2022/10/20221010_Lekyket_10k_1176x364.png" data-lazy="https://fecredit.com.vn/wp-content/uploads/2022/10/20221010_Lekyket_10k_1176x364.png" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2022/10/20221010_Lekyket_10k_608x448.png" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2021/12/202310_OEM_CD_1176x364.png">-->
+<!--                <a href="https://fecredit.com.vn/khuyenmai/sam-hang-dien-may-lai-suat-0/">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2021/12/202310_OEM_CD_1176x364.png" data-lazy="https://fecredit.com.vn/wp-content/uploads/2021/12/202310_OEM_CD_1176x364.png" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2021/12/T10_OEM_CD_608x448.png" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2023/03/20230301-IPP-FC-Web-Banner.png">-->
+<!--                <a href="https://fecredit.com.vn/the-huong-dan-su-dung/cach-ung-tien-mat-tu-the-tin-dung-fe-credit-nhanh-chong-va-don-gian/">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2023/03/20230301-IPP-FC-Web-Banner.png" data-lazy="https://fecredit.com.vn/wp-content/uploads/2023/03/20230301-IPP-FC-Web-Banner.png" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2023/03/Mobile_20230208-IPP-FC-608-x-448.png" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2023/03/1176x364.jpg">-->
+<!--                <a href="fecredit.com.vn/fe-credit-nhan-2-giai-thuong-quoc-te-tu-tap-chi-the-global-economics/">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2023/03/1176x364.jpg" data-lazy="https://fecredit.com.vn/wp-content/uploads/2023/03/1176x364.jpg" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2023/03/608x448.jpg" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2023/10/20231020_CS_digital_desktop-banner-1176x364-1.png">-->
+<!--                <a href="https://fecredit.com.vn/fe-credit-thong-bao-dia-diem-ho-tro-dich-vu-khach-hang/">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2023/10/20231020_CS_digital_desktop-banner-1176x364-1.png" data-lazy="https://fecredit.com.vn/wp-content/uploads/2023/10/20231020_CS_digital_desktop-banner-1176x364-1.png" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2023/10/20231020_CS_digital_mobile-banner-608x448-1.png" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li data-thumb="https://fecredit.com.vn/wp-content/uploads/2023/09/20230911-FEOL-Mo-the-nhanh-vay-tien-tu-dong-1176x364px.png">-->
+<!--                <a href="https://fecredit.com.vn/cau-hoi-thuong-gap/huong-dan-khach-hang-dang-ky-vay-tien-mat-hoac-mo-the-tin-dung-qua-ung-dung-fe-online/">-->
+<!--                    <img src="https://fecredit.com.vn/wp-content/uploads/2023/09/20230911-FEOL-Mo-the-nhanh-vay-tien-tu-dong-1176x364px.png" data-lazy="https://fecredit.com.vn/wp-content/uploads/2023/09/20230911-FEOL-Mo-the-nhanh-vay-tien-tu-dong-1176x364px.png" class="hidden-mobile" />-->
+<!--                    <img  data-lazy="https://fecredit.com.vn/wp-content/uploads/2023/09/DMC_FEOL_Lending_Website__610x450px.png" class="hidden-desktop"/>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </section>-->
+    <section class="main-selects-issua">
+        <div class="main-selects-issua-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 ml-auto col-md-6 left">
+                        <h4>Chào bạn,</h4>
+                        <h2>Chúng tôi là FE CREDIT <br>  Công ty tài chính tiêu dùng uy tín tại Việt Nam</h2>
+                        <h4>Chúng tôi hân hạnh mang đến các sản phẩm tài chính đa dạng, phù hợp nhất với nhu cầu chi tiêu của bạn và gia đình.</h4>
+                        <h5 class="hidden-md hidden-xs hidden-sm">Bạn mong muốn tìm hiểu giải pháp gì?</h5>
+                    </div>
+                    <div class="col-12 col-md-5 right">
+                        <img id="home-tabs-image-1" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/home-tabs/img-snap.png"
+                             srcset="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/home-tabs/default-tsa-2-des/img-snap.png,
+                                 https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/home-tabs/default-tsa-2-des/img-snap@2x.png 2x"
+                             alt="default-tsa-2-des" >
+                        <img id="home-tabs-image-2" style="display: none" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/home-tabs/dien-may-des.png"  alt="default-tsa-2-des" >
+                        <img id="home-tabs-image-3" style="display: none" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/home-tabs/vay-mua-xe-des.png"  alt="default-tsa-2-des" >
+                        <img id="home-tabs-image-4" style="display: none" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/home-tabs/the-tin-dung-des.png"  alt="default-tsa-2-des" >
+                        <img id="home-tabs-image-5" style="display: none" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/home-tabs/bao-hiem-2-des.png"  alt="default-tsa-2-des" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-selects-issua-content">
+            <h5 class="">Bạn mong muốn tìm hiểu giải pháp gì?</h5>
+            <!-- <div class="container main-selects-issua-tabs-items">
+                <div class="row">
+                    <div class="col-12 col-md-10 ml-auto mr-auto">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item items" onclick="changeImageTabs();">
+                                <a class="item-issua active" data-toggle="tab" href="#issua1" data-tabs="1">
+                                    <div>
+                                        <div class="img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32">
+                                                <defs>
+                                                    <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                                        <stop offset="0%" stop-color="#C6DAD0"/>
+                                                        <stop offset="100%" stop-color="#FFF"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <path fill="url(#a)" fill-rule="evenodd" d="M30.454 15.22l1.547.894-21.334 12.317L0 22.272l1.547-.893 9.12 5.265L30.454 15.22zm0-3.478l1.547.894-21.334 12.317L0 18.794l1.547-.893 9.12 5.265 19.787-11.424zM21.334 3l10.667 6.158-21.334 12.317L0 15.316 21.334 3zM5.524 14.21c-.502.001-.985.118-1.342.323-.356.207-.557.486-.56.775-.002.29.196.568.55.772.736.425 1.936.423 2.679-.006.356-.206.557-.485.56-.774.002-.29-.196-.568-.55-.772-.354-.205-.835-.318-1.337-.318zm10.5-5.186c-1.477.003-2.896.345-3.943.95-1.049.605-1.641 1.424-1.647 2.276-.006.853.575 1.669 1.615 2.27 1.04.6 2.453.935 3.93.931 1.476-.004 2.894-.345 3.942-.95 2.183-1.26 2.197-3.295.032-4.545-1.04-.6-2.454-.936-3.93-.932zm-2.63 1.064l.94.543a6.738 6.738 0 0 1 1.891-.539l.513.854c-.707.113-1.577.35-1.948.564-.22.126-.289.253-.127.346.641.37 2.558-1.174 4.132-.265.797.46.624 1.062-.054 1.583l.983.569-.935.54-.995-.576a7.498 7.498 0 0 1-2.248.543l-.494-.85c.832-.042 1.852-.3 2.304-.561.276-.16.358-.315.159-.43-.66-.381-2.539 1.186-4.076.298-.703-.406-.687-.976-.021-1.526l-.958-.553.934-.54zm13.1-2.011c-.503.001-.986.118-1.343.323-.357.207-.558.485-.56.775-.002.29.196.568.55.772.736.425 1.936.423 2.678-.006.357-.205.558-.485.56-.774.003-.29-.195-.568-.549-.773-.354-.204-.835-.317-1.337-.317z"/>
+                                            </svg>
+                                        </div>
+                                        <h3>Vay tiền mặt</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item items" onclick="changeImageTabs();">
+                                <a class="item-issua" data-toggle="tab" href="#issua2" data-tabs="2">
+                                    <div>
+                                        <div class="img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32">
+                                                <defs>
+                                                    <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                                        <stop offset="0%" stop-color="#C6DAD0"/>
+                                                        <stop offset="100%" stop-color="#FFF"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <path fill="url(#a)" fill-rule="evenodd" d="M27.612 6.667c1.686 0 3.056 1.308 3.056 2.916v12.834c0 1.607-1.372 2.916-3.056 2.916H4.39c-1.684 0-3.056-1.309-3.056-2.916V9.583c0-1.607 1.372-2.916 3.056-2.916zm-11 14h-11A.598.598 0 0 0 5 21.25c0 .322.274.583.611.583h11a.597.597 0 0 0 .612-.583.598.598 0 0 0-.611-.583zm7.945-3.5a2.5 2.5 0 0 0-1.222.323 2.507 2.507 0 0 0-1.223-.323c-1.348 0-2.445 1.046-2.445 2.333 0 1.287 1.097 2.333 2.445 2.333.431 0 .852-.114 1.223-.323.361.2.775.323 1.222.323 1.348 0 2.444-1.046 2.444-2.333 0-1.287-1.096-2.333-2.444-2.333zm0 1.166c.674 0 1.222.524 1.222 1.167s-.549 1.167-1.222 1.167a1.242 1.242 0 0 1-1.092-.664l-.026-.038a1.084 1.084 0 0 1 0-.93c.006-.015.019-.024.026-.038a1.24 1.24 0 0 1 1.091-.664zm-2.445.002c.105 0 .209.014.31.04-.01.017-.014.037-.024.054-.07.13-.128.267-.174.41-.012.04-.028.078-.037.117a2.165 2.165 0 0 0-.075.544c0 .188.03.369.075.544.01.04.025.077.037.116.046.144.103.28.174.413.01.018.013.
+ 038.023.055-.743.193-1.531-.384-1.531-1.127 0-.643.549-1.167 1.222-1.167zM10.5 18.332H5.611a.598.598 0 0 0-.61.584c0 .322.273.583.61.583h4.89a.598.598 0 0 0 .61-.583.598.598 0 0 0-.61-.584zm2.445-3.5H10.5a.598.598 0 0 0-.61.584c0 .322.273.583.61.583h2.445a.598.598 0 0 0 .611-.583.598.598 0 0 0-.611-.584zm-4.89 0H5.612a.598.598 0 0 0-.61.584c0 .322.273.583.61.583h2.445a.598.598 0 0 0 .611-.583.598.598 0 0 0-.611-.584zm9.779 0h-2.445a.598.598 0 0 0-.61.584c0 .322.273.583.61.583h2.445a.597.597 0 0 0 .611-.583.598.598 0 0 0-.611-.584z"/>
+                                            </svg>
+                                        </div>
+                                        <h3>Mở thẻ tín dụng</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item items" onclick="changeImageTabs();">
+                                <a class="item-issua" data-toggle="tab" href="#issua3" data-tabs="3">
+                                    <div>
+                                        <div class="img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32">
+                                                <defs>
+                                                    <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                                        <stop offset="0%" stop-color="#C6DAD0"/>
+                                                        <stop offset="100%" stop-color="#FFF"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <path fill="url(#a)" fill-rule="evenodd" d="M27.832 8.03V26.5a3.5 3.5 0 0 1-3.5 3.5H8.5A3.5 3.5 0 0 1 5 26.5V8.03h22.832zm-11.373 2.5c-4.48 0-8.142 3.66-8.142 8.14s3.662 8.185 8.142 8.185c4.48 0 8.142-3.661 8.142-8.141s-3.662-8.185-8.142-8.185zm0 1.722a6.453 6.453 0 0 1 6.462 6.462 6.453 6.453 0 0 1-6.462 6.461 6.453 6.453 0 0 1-6.462-6.461 6.453 6.453 0 0 1 6.462-6.462zm.043.819a5.547 5.547 0 0 0-5.385 4.178 8.4 8.4 0 0 1 3.188-.086c.862.172 1.422.517 1.939.819.344.215.646.43 1.077.56 1.292.473 2.886.344 4.738-.388a5.578 5.578 0 0 0-5.557-5.083zM16.028 2v5.17H5V2h11.028zm11.847 0v5.17H16.89V2h10.985zm-2.67 1.594a1.25 1.25 0 1 0-.001 2.498 1.25 1.25 0 0 0 0-2.498zm-4.352.344a.905.905 0 1 0 0 1.81.905.905 0 0 0 0-1.81zm-10.037-.043H6.809v1.336h4.007V3.895z"/>
+                                            </svg>
+
+                                        </div>
+                                        <h3><span>Vay <span class='hidden-xs hidden-sm'>trả</span> góp <br> điện máy</span></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item items" onclick="changeImageTabs();">
+                                <a class="item-issua" data-toggle="tab" href="#issua4" data-tabs="4">
+                                    <div>
+                                        <div class="img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32">
+                                                <defs>
+                                                    <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                                        <stop offset="0%" stop-color="#C6DAD0"/>
+                                                        <stop offset="100%" stop-color="#FFF"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <path fill="url(#a)" fill-rule="evenodd" d="M16.343 17.39c1.267 0 2.302 1.133 2.302 2.52v9.571c0 1.386-1.035 2.519-2.302 2.519-1.265 0-2.3-1.133-2.3-2.519V19.91c0-1.386 1.035-2.518 2.3-2.518zm3.908-11.013c2.519 1.003 4.23 3.08 4.23 6.156l-.012 4.376c.006 2.147.01 4.304.01 5.31l.001.577c0 3.285-1.949 5.244-4.75 6.06v-8.947c0-1.966-1.502-3.564-3.348-3.564-1.846 0-3.347 1.598-3.347 3.564v8.97c-2.843-.802-4.827-2.767-4.827-6.083 0-.143.004-3.024.01-5.887l-.01-4.18v-.196c0-3.077 1.709-5.153 4.227-6.156a4.656 4.656 0 0 0 3.908 2.138c1.61 0 3.072-.836 3.908-2.138zm-1.495 3.407h-4.823c-.698 0-1.27.625-1.27 1.389s.572 1.388 1.27 1.388h4.823c.697 0 1.267-.624 1.267-1.388 0-.764-.57-1.389-1.267-1.389zM16.343 0a3.877 3.877 0 0 1 3.736 2.85l.048.172h5.631c.512 0 .93.38.93.851 0 .47-.418.853-.93.853h-5.631l-.048.17a3.88 3.88 0 0 1-3.736 2.852 3.881 3.881 0 0 1-3.735-2.851l-.048-.171H6.93c-.513 0-.93-.383-.93-.853s.417-.851.93-.851h5.63l.048-.172A3.878 3.878 0 0 1 16.343 0zm0 1.608a2.269 2.269 0 0 0-2.266 2.265 2.269 2.269 0 0 0 2.266 2.267 2.269 2.269 0 0 0 2.267-2.267 2.269 2.269 0 0 0-2.267-2.265z"/>
+                                            </svg>
+
+                                        </div>
+                                        <h3>Vay mua <br> xe máy</h3>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item items" onclick="changeImageTabs();">
+                                <a class="item-issua" data-toggle="tab" href="#issua5" data-tabs="5">
+                                    <div>
+                                        <div class="img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32">
+                                                <defs>
+                                                    <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                                        <stop offset="0%" stop-color="#C6DAD0"/>
+                                                        <stop offset="100%" stop-color="#FFF"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <path fill="url(#a)" fill-rule="evenodd" d="M15.558 0l.492.624c.042.052 4.292 5.296 12.411 5.583l.557.02.047.555c.015.19.37 4.716-1.062 10.093-1.91 7.17-6.126 12.361-12.195 15.015l-.25.11-.252-.11C9.238 29.236 5.022 24.046 3.112 16.875 1.679 11.498 2.034 6.973 2.05 6.782l.046-.556.557-.019C10.774 5.92 15.022.676 15.065.623L15.558 0zm0 4.02c-1.905 1.66-5.516 4.105-10.796 4.777.03 1.662.221 4.447 1.033 7.453.762 2.827 1.915 5.307 3.425 7.374a17.375 17.375 0 0 0 6.337 5.346 17.37 17.37 0 0 0 6.339-5.346c1.51-2.067 2.662-4.547 3.425-7.373.811-3.008 1.002-5.792 1.032-7.455-5.28-.671-8.891-3.116-10.796-4.776zm8.776 6.446c-.035 1.369-.206 3.53-.834 5.857-.62 2.299-1.558 4.316-2.785 5.997-1.245 1.703-3.314 3.354-5.157 4.363l-.328-.185c-1.757-1.019-3.658-2.575-4.83-4.178-.025-.035-.047-.07-.071-.105.239-.02.48-.05.723-.071a14.768 14.768 0 0 0 2.413-.55 15.87 15.87 0 0 0 2.382-1.023 17.48 17.48 0 0 0 2.223-1.458 19.554 19.554 0 0 0 1.962-1.784c.294-.332.592-.637.858-.976.133-.167.27-.326.398-.492l.373-.502c.124-.162.24-.332.35-.5.113-.166.223-.331.332-.493.205-.338.408-.656.589-.976.088-.163.175-.32.26-.475.085-.153.168-.302.242-.457.147-.306.296-.586.419-.864l.343-.777c.05-.123.095-.24.138-.351zm-8.777-3.887c1.625 1.296 4.84 3.14 8.647 3.658l-.22.397c-.131.212-.272.44-.422.686-.15.244-.326.485-.501.75a6.536 6.536 0 0 1-.283.39l-.301.401c-.207.27-.436.532-.665.81l-.367.4a7.056 7.056 0 0 1-.383.401l-.4.396c-.137.13-.282.252-.424.38-.28.264-.59.488-.891.735a15.8 15.8 0 0 1-1.963 1.25c-.689.354-1.399.652-2.117.883-.721.218-1.448.37-2.162.458a12.34 12.34 0 0 1-2.089.042c-.337-.043-.666-.06-.984-.126-.16-.03-.317-.052-.472-.085a73.627 73.627 0 0 0-.456-.111 4.542 4.542 0 0 1-.44-.124 166.28 166.28 0 0 0-.423-.131L8.142 18c-.195-.54-.37-1.1-.527-1.678-.66-2.448-.816-4.714-.84-6.066 3.866-.491 7.14-2.367 8.782-3.678z"/>
+                                            </svg>
+
+                                        </div>
+                                        <h3>Mua bảo hiểm</h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container main-selects-issua-tabs-content">
+                <div class="home-tab">
+                    <div class="col-12 col-md-10 ml-auto mr-auto">
+                        <!-- Tab panes content -->
+                        <div class="tab-content">
+                            <div id="issua1" class="tab-pane fade show active">
+
+                                <div class="home-tabs-breadcrumb">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-3 text-center item">
+                                            Duyệt vay đến 70 triệu
+                                        </div>
+                                        <div class="col-xs-6 col-md-3 text-center item">
+                                            Giải ngân nhanh chóng
+                                        </div>
+                                        <div class="col-xs-6 col-md-3 text-center item">
+                                            Thủ tục đơn giản
+                                        </div>
+                                        <div class="col-xs-6 col-md-3 text-center item">
+                                            Không cần thế chấp
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="" method="POST" class="loan-form">
+                                    <input type="hidden" id="loan_nonce" name="loan_nonce" value="a6d7283f3c" /><input type="hidden" name="_wp_http_referer" value="/" />                                                    <input type="hidden" name="action" value="frontend__register_loan_home">
+                                    <input type="hidden" name="loan_in" value="Vay tiền mặt">
+                                    <input type="hidden" name="loan_product" value="PL">
+                                    <input type="hidden" name="loan_campaign" value="LandingPage">
+                                    <input type="hidden" name="url_page_thank_you" value="https://fecredit.com.vn/cam-on-ban-da-dang-ky-vay-thanh-cong/">
+                                    <input type="hidden" name="url_page_thank_you_dup" value="https://fecredit.com.vn/cam-on-da-dang-ky-vay-tc-pd-1/">
+                                    <input type="hidden" name="url_page_thank_you_bad" value="https://fecredit.com.vn/cam-on-da-dang-ky-vay-tc-pd-2/">
+                                    <input type="hidden" name="home_loan_money" value="0" class="loan_money_PL">
+                                    <input type="hidden" name="home_loan_time" value="0" class="loan_time_PL">
+                                    <input type="hidden" name="loan_referer" value="" id="loan_referer">
+                                    <input type="hidden" name="current_page" value="Homepage" id="current_page">
+                                    <!-- <div><p class="label-step">Bước 1: CHỌN KHOẢN VAY</p></div>
+                                    <div class="row row-issua1">
+                                        <div class="col-md-6 col-xs-12 slider-item slider-money">
+                                            <div class="show-money">
+                                                <div>
+                                                    <label><i>Số tiền:</i></label>
+                                                    <input type="text" class="amount-money fwb"
+                                                           id="issua1-amount-money" name="loan_money"
+                                                           readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="money-range" id="issua1-money-range"
+                                                 data-min="0"
+                                                 data-max="60000000"
+                                                 data-step="10000000"
+                                                 data-pro="PL"></div>
+                                            <div class="fluid clearfix">
+                                                            <span class="col-xs-6">
+                                                                <small>0</small>
+                                                            </span>
+                                                <span class="col-xs-6 tar">
+                                                                <small>60,000,000</small>
+                                                            </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12 slider-item slider-month">
+                                            <div class="show-time">
+                                                <div>
+                                                    <label><i>Thời gian vay:</i></label>
+                                                    <input type="text" class="amount-time fwb"
+                                                           id="issua1-amount-time" name="loan_time" readonly
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="time-range" id="issua1-time-range"
+                                                 data-min="0"
+                                                 data-max="36"
+                                                 data-step="1"
+                                                 data-pro="PL"
+                                                 data-unit="Tháng"></div>
+
+                                            <div class="fluid clearfix">
+                                                            <span class="col-xs-6">
+                                                                <small>0 tháng</small>
+                                                            </span>
+                                                <span class="col-xs-6 tar">
+                                                                <small>36 tháng</small>
+                                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="display: none;">
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="result-money">
+                                                <span class="text1">Khoản trả góp hàng tháng</span>
+                                                <span class="number_value number"></span>
+                                                <span class="unit">&nbsp;VND</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <small class="note">*Ghi chú: Kết quả tính toán này chỉ mang tính chất tham khảo và có thể sai lệch nhỏ với kết quả tính toán thực tế tại các điểm giới thiệu của FE CREDIT</small>
+                                        </div>
+                                    </div> -->
+
+                                    <div>
+                                        <p class="label-step">Đăng ký ngay</p>
+                                    </div>
+                                    <div class="row step-card row-form-loan">
+                                        <!--  -->
+                                        <div class="form-group col-md-6 col-xs-12">
+                                            <input class="form-control" type="text" name="loan_name" placeholder="Tên đầy đủ" required value="">
+                                        </div>
+                                        <div class="form-group col-md-6 col-xs-12">
+                                            <input class="form-control" type="number" name="loan_identify" placeholder="CCCD" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-xs-12">
+                                            <input class="form-control" type="tel" name="loan_phone" pattern="[0-9]{10}" placeholder="Số điện thoại" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-xs-12">
+                                            <input class="form-control" type="email" name="loan_email" placeholder="Email" required>
+                                        </div>
+                                        <div class="form-group form-group-underline col-md-6 col-xs-12">
+                                            <label>Ngày sinh:</label>
+                                            <select class="input-select" id="loan_date" name="loan_date" required>
+                                                <option value="">Ngày</option>
+                                                <option value = "01">1</option><option value = "02">2</option><option value = "03">3</option><option value = "04">4</option><option value = "05">5</option><option value = "06">6</option><option value = "07">7</option><option value = "08">8</option><option value = "09">9</option><option value = "10">10</option><option value = "11">11</option><option value = "12">12</option><option value = "13">13</option><option value = "14">14</option><option value = "15">15</option><option value = "16">16</option><option value = "17">17</option><option value = "18">18</option><option value = "19">19</option><option value = "20">20</option><option value = "21">21</option><option value = "22">22</option><option value = "23">23</option><option value = "24">24</option><option value = "25">25</option><option value = "26">26</option><option value = "27">27</option><option value = "28">28</option><option value = "29">29</option><option value = "30">30</option><option value = "31">31</option>
+                                            </select>
+                                            <select class="input-select form-group-underline" id="loan_month" name="loan_month" required>
+                                                <option value="">Tháng</option>
+                                                <option value = "01">1</option><option value = "02">2</option><option value = "03">3</option><option value = "04">4</option><option value = "05">5</option><option value = "06">6</option><option value = "07">7</option><option value = "08">8</option><option value = "09">9</option><option value = "10">10</option><option value = "11">11</option><option value = "12">12</option>
+                                            </select>
+                                            <select class="input-select" name="loan_year" id="loan_year" required>
+                                                <option value="">Năm</option>
+                                                <option value = "1964">1964</option><option value = "1965">1965</option><option value = "1966">1966</option><option value = "1967">1967</option><option value = "1968">1968</option><option value = "1969">1969</option><option value = "1970">1970</option><option value = "1971">1971</option><option value = "1972">1972</option><option value = "1973">1973</option><option value = "1974">1974</option><option value = "1975">1975</option><option value = "1976">1976</option><option value = "1977">1977</option><option value = "1978">1978</option><option value = "1979">1979</option><option value = "1980">1980</option><option value = "1981">1981</option><option value = "1982">1982</option><option value = "1983">1983</option><option value = "1984">1984</option><option value = "1985">1985</option><option value = "1986">1986</option><option value = "1987">1987</option><option value = "1988">1988</option><option value = "1989">1989</option><option value = "1990">1990</option><option value = "1991">1991</option><option value = "1992">1992</option><option value = "1993">1993</option><option value = "1994">1994</option><option value = "1995">1995</option><option value = "1996">1996</option><option value = "1997">1997</option><option value = "1998">1998</option><option value = "1999">1999</option><option value = "2000">2000</option><option value = "2001">2001</option><option value = "2002">2002</option><option value = "2003">2003</option><option value = "2004">2004</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-underline col-md-6 col-xs-12">
+                                            <input class="form-control" type="text" name="loan_address" placeholder="Địa chỉ (đường, phường, quận)" required>
+                                        </div>
+                                    </div>
+                                        <div class="form-group form-group-underline col-md-6 col-xs-12">
+                                            <label>Tỉnh thành:</label>
+                                            <select class="input-select x3" style="border-radius: 4px; width: calc(100% - 89px);
+                                            padding: 10px 20px;" id="loan_province" name="loan_province">
+                                                <option value="">Chọn tỉnh thành</option>
+                                                <option value="71">TP. Hồ Chí Minh</option>
+                                                <option value="36">TP. Hà Nội</option>
+                                                <option value="9">Lào Cai</option>
+                                                <option value="10">Phú Thọ</option>
+                                                <option value="11">Vĩnh Phúc</option>
+                                                <option value="12">Hòa Bình</option>
+                                                <option value="13">Hà Giang</option>
+                                                <option value="14">Sơn La</option>
+                                                <option value="15">Điện Biên</option>
+                                                <option value="16">Lai Châu</option>
+                                                <option value="17">Bắc Giang</option>
+                                                <option value="18">Bắc Ninh</option>
+                                                <option value="19">Lạng Sơn</option>
+                                                <option value="20">Cao Bằng</option>
+                                                <option value="21">Tuyên Quang</option>
+                                                <option value="22">Thái Nguyên</option>
+                                                <option value="23">Bắc Kạn</option>
+                                                <option value="24">Yên Bái</option>
+                                                <option value="25">Ninh Bình</option>
+                                                <option value="26">TP. Hải Phòng</option>
+                                                <option value="27">Hải Dương</option>
+                                                <option value="28">Hưng Yên</option>
+                                                <option value="29">Quảng Ninh</option>
+                                                <option value="30">Nam Ðịnh</option>
+                                                <option value="31">Hà Nam</option>
+                                                <option value="32">Thái Bình</option>
+                                                <option value="33">Thanh Hóa</option>
+                                                <option value="34">Nghệ An</option>
+                                                <option value="35">Hà Tĩnh</option>
+                                                <option value="36">TP. Hà Nội</option>
+                                                <option value="37">Ðắk Lắk</option>
+                                                <option value="38">Đăk Nông</option>
+                                                <option value="39">Quảng Nam</option>
+                                                <option value="40">TP. Ðà Nẵng</option>
+                                                <option value="41">Quảng Bình</option>
+                                                <option value="42">Quảng Trị</option>
+                                                <option value="43">Thừa Thiên - Huế</option>
+                                                <option value="44">Quảng Ngãi</option>
+                                                <option value="45">Bình Ðịnh</option>
+                                                <option value="46">Phú Yên</option>
+                                                <option value="47">Khánh Hòa</option>
+                                                <option value="48">Gia Lai</option>
+                                                <option value="49">Kon Tum</option>
+                                                <option value="50">Ðồng Nai</option>
+                                                <option value="51">Bình Thuận</option>
+                                                <option value="52">Lâm Ðồng</option>
+                                                <option value="53">Bà Rịa - Vũng Tàu</option>
+                                                <option value="54">Bình Dương</option>
+                                                <option value="55">Bình Phước</option>
+                                                <option value="56">Tây Ninh</option>
+                                                <option value="57">Ðồng Tháp</option>
+                                                <option value="58">Ninh Thuận</option>
+                                                <option value="59">Vĩnh Long</option>
+                                                <option value="60">TP. Cần Thơ</option>
+                                                <option value="61">Hậu Giang</option>
+                                                <option value="62">Long An</option>
+                                                <option value="63">Tiền Giang</option>
+                                                <option value="64">Trà Vinh</option>
+                                                <option value="65">Bến Tre</option>
+                                                <option value="66">An Giang</option>
+                                                <option value="67">Kiên Giang</option>
+                                                <option value="68">Cà Mau</option>
+                                                <option value="69">Bạc Liêu</option>
+                                                <option value="70">Sóc Trăng</option>
+                                            </select>
+                                        </div>
+                                        <input type="hidden" id="loan_provinceName" name="loan_provinceName">
+                                        <input type="hidden" id="loan_districtName" name="loan_districtName">
+
+                                        <div class="col-12">
+                                            <p style="font-family: 'Open Sans', sans-serif; font-size: 12px;">Khi nhấn “Đăng ký”, bạn đã đồng ý cho FE CREDIT lưu trữ và sử dụng thông tin bao gồm số điện thoại và email để giới thiệu sản phẩm, dịch vụ và chương trình khuyến mãi và chăm sóc khách hàng.
+                                                <a href="https://fecredit.com.vn/wp-content/uploads/2021/12/xac-nhan-dong-y-nhan-thong-tin-quang-cao-fe-credit.pdf" style="color: #008848 !important;" target="_blank"> Xem chi tiết tại đây </a></p>
+                                        </div>
+                                        <div class="col-12 btn-submit-loan-home">
+                                            <button class="btn btn-submit-loan col-12 col-lg-3" type="submit"
+                                                    name="loan_submit">Đăng kí ngay                                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                            </section>
+      
+                        </div>
+                        <!-- End Tab panes content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal1"></div>
+    <!-- sap app section -->
+    <section class="home-snap-app-center ">
+        <a href="https://feonline.fecredit.com.vn/?utm_source=FECWeb&utm_medium=Banner&utm_campaign=feollending">
+            <picture>
+                <img class="hidden-mobile" src="https://fecredit.com.vn/wp-content/uploads/2023/09/20230912-FEOL-Vay-tiền-hay-mở-thẻ-2298x589-no-QR-code.jpg" alt="Fe-Snap banner" class="lazy" width="1920" height="492">
+                <img class="hidden-desktop" src="https://fecredit.com.vn/wp-content/uploads/2023/09/20230912-FEOL-Vay-tiền-hay-mở-thẻ-2560x1362-no-QR-code-1.jpg" alt="Fe-Snap banner" class="lazy" width="555" height="417">
+            </picture>
+        </a>
+    </section>
+    <!-- News section -->
+    <section id="newsales-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 newsales mr-auto">
+                    <h3>Khuyến mãi</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="news-item">
+                                <a href="https://fecredit.com.vn/khuyenmai/tra-gop-tu-0-tu-tin-luot-xe-ve-nha/">
+                                    <img width="235" height="124" data-src="https://fecredit.com.vn/wp-content/uploads/2024/03/202402-TWL-Yamaha-550x286-1.png" alt="TRẢ GÓP TỪ 0% &#8211; TỰ TIN LƯỚT XE VỀ NHÀ" class="lazy">
+
+                                </a>
+                                <div class="news-text">
+                                    <h4>
+                                        <a href="https://fecredit.com.vn/khuyenmai/tra-gop-tu-0-tu-tin-luot-xe-ve-nha/">
+                                            TRẢ GÓP TỪ 0% &#8211; TỰ TIN LƯỚT XE VỀ NHÀ                                                    </a>
+                                    </h4>
+                                    <div class="time">1 tuần trước</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="news-item">
+                                <a href="https://fecredit.com.vn/khuyenmai/uu-dai-thang-3-ruc-ro/">
+                                    <img width="235" height="124" data-src="https://fecredit.com.vn/wp-content/uploads/2024/03/202403-Thang-3-ruc-ro-Uu-dai-het-co-550x286-1.png" alt="ƯU ĐÃI THÁNG 3 RỰC RỠ" class="lazy">
+
+                                </a>
+                                <div class="news-text">
+                                    <h4>
+                                        <a href="https://fecredit.com.vn/khuyenmai/uu-dai-thang-3-ruc-ro/">
+                                            ƯU ĐÃI THÁNG 3 RỰC RỠ                                                    </a>
+                                    </h4>
+                                    <div class="time">2 tuần trước</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-wiew-all">
+                            <a href="/khuyen-mai"><i class="fa fa-chevron-right"></i>XEM TẤT CẢ KHUYẾN MÃI</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 newsales ml-auto">
+                    <h3>Tin tức</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="news-item">
+                                <a href="https://fecredit.com.vn/fe-credit-hop-tac-voi-break-field-viet-nam-de-mo-rong-them-kenh-quang-ba-digital-cho-cac-san-pham-tai-chinh-tieu-dung/">
+                                    <img width="235" height="124" data-src="https://fecredit.com.vn/wp-content/uploads/2023/12/550x286-safezone-550x200-FEC-x-Cashingfield-1.jpg" alt="FE CREDIT hợp tác với Break Field Việt Nam để mở rộng thêm kênh quảng bá digital cho các sản phẩm tài chính tiêu dùng" class="lazy">
+                                </a>
+                                <div class="news-text">
+                                    <h4>
+                                        <a href="https://fecredit.com.vn/fe-credit-hop-tac-voi-break-field-viet-nam-de-mo-rong-them-kenh-quang-ba-digital-cho-cac-san-pham-tai-chinh-tieu-dung/">
+                                            FE CREDIT hợp tác với Break Field Việt Nam để mở rộng thêm kênh quảng bá digital cho các sản phẩm tài chính tiêu dùng                                                    </a>
+                                    </h4>
+                                    <div class="time">3 tháng trước</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="news-item">
+                                <a href="https://fecredit.com.vn/vpbank-fe-credit-va-fpt-shop-ky-ket-thoa-thuan-hop-tac-chien-luoc/">
+                                    <img width="235" height="124" data-src="https://fecredit.com.vn/wp-content/uploads/2023/12/20231211_MOU_FPT_thumbnail-550x286-1.png" alt="VPBank, FE CREDIT và FPT Shop ký kết thỏa thuận hợp tác chiến lược" class="lazy">
+                                </a>
+                                <div class="news-text">
+                                    <h4>
+                                        <a href="https://fecredit.com.vn/vpbank-fe-credit-va-fpt-shop-ky-ket-thoa-thuan-hop-tac-chien-luoc/">
+                                            VPBank, FE CREDIT và FPT Shop ký kết thỏa thuận hợp tác chiến lược                                                    </a>
+                                    </h4>
+                                    <div class="time">3 tháng trước</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-wiew-all">
+                            <a href="/tin-tuc"><i class="fa fa-chevron-right"></i>XEM TẤT CẢ TIN TỨC</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumb-group">
+                    <h3 class="">Bạn muốn vay nhanh?</h3>
+                    <a href="javascript:void(0)">
+                        <div class="btn-call">
+                            <span>
+                                TỔNG ĐÀI CHUNG                            </span>
+                            *5678
+                        </div>
+                    </a>
+                    <a href="tel:(028) 39 111 555">
+                        <div class="btn-call">
+                            <span>
+                                KH CHƯA VAY Ở FE Credit                            </span>
+                            (028) 39 111 555                        </div>
+                    </a>
+                    <a href="tel:(028) 35 51 6868">
+                        <div class="btn-call">
+                            <span>
+                                KH ĐÃ VAY Ở FE Credit                            </span>
+                            <!-- (028) 39 111 555 -->
+                            (028) 35 51 6868
+                        </div>
+                    </a>
+                    <div class="footer-icon-social hidden-mobile">
+                        <span class="footer-text-connect">Kết nối</span>
+                        <span class="footer-social">
+                            <a target="_bank" href="https://www.facebook.com/FECREDIT.VN/"><img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/fb--size-sm.png" alt="fb-icon"></a>
+                            <a target="_bank" href="https://www.youtube.com/channel/UCVEbuhfBLKok_Jpl4VZVV1A/about"><img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/yu--size-sm.png" alt="youtube-icon"></a>
+                            <a target="_bank" href="http://zalo.me/FECREDIT"><img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/zalo--size-sm.png" alt="zalo-icon"></a>
+                        </span>
+                    </div>
+                    <a href="https://fecredit.com.vn/thong-tin-lien-lac/" class="hidden-mobile">
+                        <div class="btn-icon-send-mail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+                                <path fill="#008848" fill-rule="evenodd" d="M13.18 12.806l8 6.07c-.135.05-.278.08-.43.08H3.25c-.152 0-.296-.03-.432-.08l8-6.07c.363.24.771.368 1.182.368.41 0 .82-.128 1.18-.368zm8.66-6.532c.1.18.16.381.16.6v10.833c0 .225-.065.434-.17.617l-7.95-6.034zm-19.68 0l7.96 6.016-7.95 6.033a1.23 1.23 0 0 1-.17-.616V6.874c0-.219.062-.421.16-.6zm18.59-.65c.16 0 .312.033.453.087l-8.41 6.356a1.298 1.298 0 0 1-1.588-.001L2.798 5.711c.141-.055.293-.087.452-.087z">
+                                </path>
+                            </svg>
+                            GỬI EMAIL CHO CHÚNG TÔI                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 hidden-desktop">
+                <div class="thumb-group download">
+                    <h3 class="">Bạn muốn tải ứng dụng?</h3>
+                    <div class="app-download-box">
+
+                        <!-- <div class="download-item">
+                            <a href="https://go.onelink.me/KslF/172ea628">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/img-logo-snap@2x.png" alt="snap-icon">
+                            </a>
+                            <div class="content">
+                                <p>Vay và mở thẻ trong 15 phút</p>
+                                <div class="_btn-contain">
+                                    <a class="btn-app" href="https://fec-snap.onelink.me/vuSP/f1ae2f57">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/ios-apple@2x.png" alt="icon">
+
+                                    </a>
+                                    <a class="btn-app" href="https://fec-snap.onelink.me/vuSP/f1ae2f57">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/google-play-store@2x.png" alt="icon">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="download-item">
+                            <a href="https://fecredit.onelink.me/9nfE/d3cb5a23" target="_blank">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/img-logo-fec@2x_1.png" alt="fec-icon">
+                            </a>
+                            <div class="content">
+                                <p>Siêu Ứng dụng FE Online <br />cho mọi nhu cầu tài chính                                </p>
+                                <div class="_btn-contain">
+                                    <a class="btn-app" href="https://feonline.fecredit.com.vn/?utm_source=FECWeb&utm_medium=Banner&utm_campaign=feollending" target="_blank">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/ios-apple@2x.png" alt="icon">
+
+                                    </a>
+                                    <a class="btn-app" href="https://feonline.fecredit.com.vn/?utm_source=FECWeb&utm_medium=Banner&utm_campaign=feollending" target="_blank">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/google-play-store@2x.png" alt="icon">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="download-item">
+                            <a href="https://go.onelink.me/PfOR/ef090210">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/img-logo-shield@2x.png" alt="shield-icon">
+                            </a>
+                            <div class="content">
+                                <p>Bảo hiểm sức khỏe thông minh  </p>
+                                <div class="_btn-contain">
+                                    <a class="btn-app" href="https://go.onelink.me/PfOR/ef090210">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/ios-apple@2x.png" alt="icon">
+
+                                    </a>
+                                    <a class="btn-app" href="https://go.onelink.me/PfOR/ef090210">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/google-play-store@2x.png" alt="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumb-group">
+                    <h3 class="">Bạn cần hỗ trợ?</h3>
+                    <p>Phòng dịch vụ khách hàng:</p>
+                    <div class="footer-service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                            <path fill="#008848" fill-rule="evenodd" d="M7.045 4.106c.783 0 1.42.637 1.42 1.42 0 1.11.175 2.198.518 3.235a1.434 1.434 0 0 1-.352 1.45L7.13 12.206c1.234 2.328 2.735 3.827 5.08 5.079l2.043-1.544c.33-.337.902-.47 1.405-.297 1.03.34 2.118.513 3.229.513.783 0 1.42.638 1.42 1.422v3.306c0 .783-.637 1.42-1.42 1.42-9.142 0-16.58-7.437-16.58-16.578 0-.784.638-1.421 1.422-1.421zm5.554-1c6.05 0 8.709 4.4 8.709 8.708 0 .275-.184.459-.459.459s-.458-.184-.458-.459c0-3.85-2.383-7.791-7.792-7.791-.275 0-.458-.184-.458-.459s.183-.458.458-.458zm0 4.583c2.659 0 4.125 1.467 4.125 4.125 0 .275-.183.459-.458.459s-.458-.184-.458-.459c0-1.466-.55-3.208-3.209-3.208-.275 0-.458-.183-.458-.458s.183-.459.458-.459z">
+                            </path>
+                        </svg>
+                        <span> Hỗ trợ KH sản phẩm vay: </span>
+                        <span style="padding-left:30px;">
+
+                                <a href="tel:1900 6535" class="btn btn-icon-hotline">
+                                    1900 6535 </a>
+                                                    </span>
+                    </div>
+                    <div class="footer-service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                            <path fill="#008848" fill-rule="evenodd" d="M7.045 4.106c.783 0 1.42.637 1.42 1.42 0 1.11.175 2.198.518 3.235a1.434 1.434 0 0 1-.352 1.45L7.13 12.206c1.234 2.328 2.735 3.827 5.08 5.079l2.043-1.544c.33-.337.902-.47 1.405-.297 1.03.34 2.118.513 3.229.513.783 0 1.42.638 1.42 1.422v3.306c0 .783-.637 1.42-1.42 1.42-9.142 0-16.58-7.437-16.58-16.578 0-.784.638-1.421 1.422-1.421zm5.554-1c6.05 0 8.709 4.4 8.709 8.708 0 .275-.184.459-.459.459s-.458-.184-.458-.459c0-3.85-2.383-7.791-7.792-7.791-.275 0-.458-.184-.458-.459s.183-.458.458-.458zm0 4.583c2.659 0 4.125 1.467 4.125 4.125 0 .275-.183.459-.458.459s-.458-.184-.458-.459c0-1.466-.55-3.208-3.209-3.208-.275 0-.458-.183-.458-.458s.183-.459.458-.459z">
+                            </path>
+                        </svg>
+                        <span>Hỗ trợ KH thẻ tín dụng: </span> <a href="tel:1900 6939">
+                        1900 6939 </a>
+                    </div>
+                    <div class="footer-service-item address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+                            <path fill="#008848" fill-rule="evenodd" d="M21.715 6.273l-10-3.333a.415.415 0 0 0-.548.395v4.708l-8.893 3.234a.416.416 0 0 0-.274.391v10.834c0 .23.187.416.417.416h19.166c.23 0 .417-.186.417-.416V6.668a.417.417 0 0 0-.285-.395zM6.167 20.835c0 .23-.187.417-.417.417H4.083a.417.417 0 0 1-.416-.417v-3.333c0-.23.186-.417.416-.417H5.75c.23 0 .417.187.417.417v3.333zm0-5c0 .23-.187.417-.417.417H4.083a.417.417 0 0 1-.416-.417v-3.333c0-.23.186-.417.416-.417H5.75c.23 0 .417.187.417.417v3.333zm4.166 5c0 .23-.186.417-.416.417H8.25a.417.417 0 0 1-.417-.417v-3.333c0-.23.187-.417.417-.417h1.667c.23 0 .416.187.416.417v3.333zm0-5c0 .23-.186.417-.416.417H8.25a.417.417 0 0 1-.417-.417v-3.333c0-.23.187-.417.417-.417h1.667c.23 0 .416.187.416.417v3.333zm5.834 5c0 .23-.187.417-.417.417h-1.667a.417.417 0 0 1-.416-.417v-3.333c0-.23.186-.417.416-.417h1.667c.23 0 .417.187.417.417v3.333zm0-5c0 .23-.187.417-.417.417h-1.667a.417.417 0 0 1-.416-.417v-3.333c0-.23.186-.417.416-.417h1.667c.23 0 .417.187.417.417v3.333zm0-5c0 .23-.187.417-.417.417h-1.667a.417.417 0 0 1-.416-.417V7.502c0-.23.186-.417.416-.417h1.667c.23 0 .417.187.417.417v3.333zm3.333 10c0 .23-.187.417-.417.417h-1.666a.417.417 0 0 1-.417-.417v-3.333c0-.23.187-.417.417-.417h1.666c.23 0 .417.187.417.417v3.333zm0-5c0 .23-.187.417-.417.417h-1.666a.417.417 0 0 1-.417-.417v-3.333c0-.23.187-.417.417-.417h1.666c.23 0 .417.187.417.417v3.333zm0-5c0 .23-.187.417-.417.417h-1.666a.417.417 0 0 1-.417-.417V7.502c0-.23.187-.417.417-.417h1.666c.23 0 .417.187.417.417v3.333z">
+                            </path>
+                        </svg>
+                        <span>Địa chỉ: :
+                            Tầng trệt, 144 Cộng Hòa, P12, Q.Tân Bình, TP HCM.</span>
+                    </div>
+                    <div class="suco">
+                        <p>Khi gặp các vấn đề sự cố và an toàn bảo mật thông tin trên Website vui lòng điền vào <a href="https://fecredit.com.vn/thong-tin-lien-lac">mẫu khai báo sự cố.</a>                    </div>
+                    <div class="footer-icon-social hidden-desktop">
+                        <span class="footer-text-connect">Kết nối</span>
+                        <span class="footer-social">
+                            <a target="_bank" href="https://www.facebook.com/FECREDIT.VN/">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/fb--size-sm.png" alt="fb-icon">
+                            </a>
+                            <a target="_bank" href="https://www.youtube.com/channel/UCVEbuhfBLKok_Jpl4VZVV1A/about">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/yu--size-sm.png" alt="youtube-icon">
+                            </a>
+                            <a target="_bank" href="http://zalo.me/FECREDIT">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/zalo--size-sm.png" alt="zalo-icon">
+                            </a>
+                        </span>
+                    </div>
+                    <a href="https://fecredit.com.vn/thong-tin-lien-lac/" class="hidden-desktop">
+                        <div class="btn-icon-send-mail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+                                <path fill="#008848" fill-rule="evenodd" d="M13.18 12.806l8 6.07c-.135.05-.278.08-.43.08H3.25c-.152 0-.296-.03-.432-.08l8-6.07c.363.24.771.368 1.182.368.41 0 .82-.128 1.18-.368zm8.66-6.532c.1.18.16.381.16.6v10.833c0 .225-.065.434-.17.617l-7.95-6.034zm-19.68 0l7.96 6.016-7.95 6.033a1.23 1.23 0 0 1-.17-.616V6.874c0-.219.062-.421.16-.6zm18.59-.65c.16 0 .312.033.453.087l-8.41 6.356a1.298 1.298 0 0 1-1.588-.001L2.798 5.711c.141-.055.293-.087.452-.087z">
+                                </path>
+                            </svg>
+                            GỬI EMAIL CHO CHÚNG TÔI                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 hidden-mobile">
+                <div class="thumb-group download">
+                    <h3 class="">Bạn muốn tải ứng dụng?</h3>
+                    <div class="app-download-box">
+
+                        <!-- <div class="download-item">
+                            <a href="https://go.onelink.me/KslF/172ea628">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/img-logo-snap@2x.png" alt="snap-icon">
+                            </a>
+                            <div class="content">
+                                <p>Vay và mở thẻ trong 15 phút</p>
+                                <div class="_btn-contain">
+                                    <a class="btn-app" href="https://fec-snap.onelink.me/vuSP/f1ae2f57">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/ios-apple@2x.png" alt="icon">
+                                    </a>
+                                    <a class="btn-app" href="https://fec-snap.onelink.me/vuSP/f1ae2f57">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/google-play-store@2x.png" alt="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="download-item">
+                            <!--                            <a href="https://fecredit.onelink.me/9nfE/d3cb5a23">-->
+                            <a href="https://feonline.onelink.me/swjt/uv8yiy4r">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/img-logo-fec@2x_1.png" alt="fec-icon">
+                            </a>
+                            <div class="content">
+                                <p>Siêu Ứng dụng FE Online <br />cho mọi nhu cầu tài chính</p>
+                                <div class="_btn-contain">
+                                    <a class="btn-app" href="https://feonline.fecredit.com.vn/?utm_source=FECWeb&utm_medium=Banner&utm_campaign=feollending">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/ios-apple@2x.png" alt="icon">
+
+                                    </a>
+                                    <a class="btn-app" href="https://feonline.fecredit.com.vn/?utm_source=FECWeb&utm_medium=Banner&utm_campaign=feollending">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/google-play-store@2x.png" alt="icon">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="download-item">
+                            <a href="https://go.onelink.me/PfOR/ef090210">
+                                <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/img-logo-shield@2x.png" alt="shield-icon">
+                            </a>
+                            <div class="content">
+                                <p>Bảo hiểm sức khỏe thông minh  </p>
+                                <div class="_btn-contain">
+                                    <a class="btn-app" href="https://go.onelink.me/PfOR/ef090210">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/images/icon-social/ios-apple@2x.png" alt="icon">
+
+                                    </a>
+                                    <a class="btn-app" href="https://go.onelink.me/PfOR/ef090210">
+                                        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/google-play-store@2x.png" alt="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="justify-content: end;">
+            <div class="col-lg-3 col-md-4 col-sm-6 copyRight"><a target="_blank" href="/bao-mat-va-quyen-rieng-tu/">Qui
+                định bảo mật vè quyền riêng tư</a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 copyRight">2024 -
+                Bản quyền thuộc về FE CREDIT</div>
+        </div>
+    </div>
+</footer>
+<style>
+     body>footer>div>div:nth-child(1)>div:nth-child(1)>div>a:nth-child(2) {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .footer .thumb-group>a>.btn-call>span {
+        font-size: 13px;
+    }    @media (max-width: 992px) {
+        .footer .thumb-group .btn-call span {
+            display: block !important;
+        }
+    }
+</style>
+<div class="cx-side-button">
+
+    <!-- Update chatBot 04012023 	 -->
+    <script type="text/javascript">
+        var webchatStateIndex = getCookie("_genesys.widgets.webchat.state.index");
+        console.log("Webchat State Index: " + webchatStateIndex);
+        if (webchatStateIndex > 2) {
+            loadWidget("Ongoing Session");
+        }
+
+        // $baseurl = 'https://fecredit.com.vn';
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function openChat(){
+            $(".cx-webchat-chat-button").click();
+        }
+
+        function loadWidget(y) {
+            // console.log("Load by reason: " + y);
+            // console.log("Start loading widget script");
+            // var script = document.createElement('script');
+            // script.setAttribute('type', 'text/javascript');
+            // script.setAttribute('src', $baseurl + '/lib/require.js');
+            // script.setAttribute('data-main', 'boot.js');
+            // document.head.appendChild(script);
+
+            // console.log("Start loading widget stylesheet");
+            // var stylesheet = document.createElement('link');
+            // stylesheet.setAttribute('type', 'text/css');
+            // stylesheet.setAttribute('href', 'stylesheets/Widget.css');
+            // stylesheet.setAttribute('rel', 'stylesheet');
+            // document.head.appendChild(script);
+        }
+    </script>
+
+<!--    <button id="loadScript" onclick="loadWidget('Button')" style="display:none">Load Widget</button>-->
+<!--    <script type="text/javascript">-->
+<!--        window.onload = function() {-->
+<!--            $("#loadScript").click();-->
+<!--        }-->
+<!--    </script>-->
+    <!-- update css chatbot -->
+    <link rel="stylesheet" href="https://fecredit.com.vn/wp-content/themes/fe-credit/stylesheets/hot-fix-05012023.css" />
+    <!-- end css chatbot -->
+    <!-- end Update chatBot 04012023 	 -->
+
+    <div class="chat-item cx-webchat-suport-icon">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#008848" fill-rule="evenodd" d="M6.737 4c.783 0 1.42.638 1.42 1.421 0 1.108.175 2.197.518 3.234a1.434 1.434 0 0 1-.351 1.45L6.822 12.1c1.235 2.328 2.735 3.827 5.08 5.079l2.043-1.543c.331-.338.902-.471 1.405-.298 1.031.34 2.119.514 3.229.514.783 0 1.421.637 1.421 1.42v3.307c0 .783-.638 1.421-1.421 1.421C9.438 22 2 14.562 2 5.421 2 4.638 2.638 4 3.421 4zm5.555-1C18.342 3 21 7.4 21 11.708c0 .275-.183.459-.458.459s-.459-.184-.459-.459c0-3.85-2.383-7.791-7.791-7.791-.275 0-.459-.184-.459-.459S12.017 3 12.292 3zm0 4.583c2.658 0 4.125 1.467 4.125 4.125 0 .275-.184.459-.459.459s-.458-.184-.458-.459c0-1.466-.55-3.208-3.208-3.208-.275 0-.459-.183-.459-.458s.184-.459.459-.459z">
+            </path>
+        </svg> -->
+        <img src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/images/IconSupport_24x24px.png" >
+        <label>
+            HỖ TRỢ         </label>
+    </div>
+    <div class="cx-side-button-group-custome">
+        <ul class="footer-support">
+            <li class="hotline_regiter" style="display:flex;align-items:center;padding-top:7px;padding-bottom:7px;" onclick="javascript:openChat();">
+                <span style="color: #ffffff; padding-right: 5px;">Chat với FE CREDIT</span>
+                <img src="https://fecredit.com.vn/wp-content/uploads/2023/06/admin-ajax.png" alt="Chat với FE CREDIT" style="max-height:30px;" />
+                <span style="padding-left: 5px;">
+                                                                    <a href="tel:" style="display:inline;"></a>
+                                                            </span>
+            </li>
+            <li class="hotline_regiter" style="padding-top:7px;padding-bottom:7px;">
+                <a href="https://fecredit.com.vn/taichinh/sao-phai-goi-hotline-khi-ban-de-dang-tu-tay-tra-cuu/">
+                    <span>Tra cứu nhanh</span>
+                    <span>
+                                    <img src="https://fecredit.com.vn/wp-content/uploads/2020/04/icon_38.png" alt="Tra cứu nhanh" style="max-height:30px;" />
+                                    Tìm hiểu ngay                                </span>
+                </a>
+            </li>
+            <li class="hotline_regiter" style="padding-top:7px;padding-bottom:7px;">
+                <a href="tel:(028) 39 111 555">
+                    <span>Đăng ký vay</span>
+                    <span>
+                                    <img src="https://fecredit.com.vn/wp-content/uploads/2020/12/IconSupport_24x24px.png" alt="Đăng ký vay" style="max-height:30px;" />
+                                    (028) 39 111 555                                </span>
+                </a>
+            </li>
+            <li class="hotline_regiter" style="padding-top:7px;padding-bottom:7px;">
+                <a href="tel:1900 6939">
+                    <span>Hỗ trợ KH thẻ tín dụng</span>
+                    <span>
+                                    <img src="https://fecredit.com.vn/wp-content/uploads/2020/12/IconSupport_24x24px.png" alt="Hỗ trợ KH thẻ tín dụng" style="max-height:30px;" />
+                                    1900 6939                                </span>
+                </a>
+            </li>
+            <li class="hotline_regiter" style="padding-top:7px;padding-bottom:7px;">
+                <a href="tel:1900 6535">
+                    <span>Hỗ trợ KH sản phẩm vay</span>
+                    <span>
+                                    <img src="https://fecredit.com.vn/wp-content/uploads/2020/12/IconSupport_24x24px.png" alt="Hỗ trợ KH sản phẩm vay" style="max-height:30px;" />
+                                    1900 6535                                </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- javascript libraries -->
+<script type="text/javascript">
+    let monthFE = "tháng";
+    let vndFE = "VNĐ";
+    let baseURL = "https://fecredit.com.vn";
+</script>
+<script src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/js/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/js/jquery-migrate-1.2.1.min.js' id='jquery-migrate-js'>
+</script>
+<!-- jquery UI -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<!-- bootstrap -->
+<script type="text/javascript" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/js/bootstrap.bundle.js">
+</script>
+<!-- slick -->
+<script type="text/javascript" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/js/slick.min.js"></script>
+<script type="text/javascript" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/js/jquery.lazy.min.js">
+</script>
+<!-- google capcha  -->
+<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
+<!-- <script type="text/javascript" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/js/home.min.js?v=1.0.5"> -->
+<script type="text/javascript" src="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/home/js/home.js">
+</script>
+<!--<script type="text/javascript" src="--><!--/assets/home/js/home.js"></script>-->
+<!-- <link rel="preload" href="https://fecredit.com.vn/wp-content/themes/fe-credit/assets/css/chatstyle.css" as="style"> -->
+<!--<script src='--><!--/assets/js/chatbot.js'></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.min.js" integrity="sha512-fv28nWHTcWfoN3KBd2fs+YWsirQ+L0b/iIRS7HcNDPSAwxy6oSjRrYjQ+OtJoJz0wUKsVcPYgwcZzK04KfHD0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script>
+// Configs
+let liveChatBaseUrl = document.location.protocol + '//' + 'livechat.fpt.ai/v36/src'
+let LiveChatSocketUrl = 'livechat.fpt.ai:443'
+let FptAppCode = '0534280631a81dfb9935900cbcb50d3c'
+let FptAppName = 'FE Credit'
+// Define custom styles
+let CustomStyles = {
+    // header
+    headerBackground: 'linear-gradient(86.7deg, #159109FF 0.85%, #31B743FF 98.94%)',
+    headerTextColor: '#ffffffff',
+    headerLogoEnable: false,
+    headerLogoLink: 'https://chatbot-tools.fpt.ai/livechat-builder/img/Icon-fpt-ai.png',
+    headerText: 'FE Credit',
+    // main
+    primaryColor: '#FFFFFFFF',
+    secondaryColor: '#ecececff',
+    primaryTextColor: '#000000CC',
+    secondaryTextColor: '#000000DE',
+    buttonColor: '#b4b4b4ff',
+    buttonTextColor: '#ffffffff',
+    bodyBackgroundEnable: false,
+    bodyBackgroundLink: '',
+    avatarBot: 'https://chatbot-tools.fpt.ai/livechat-builder/img/bot.png',
+    sendMessagePlaceholder: 'Enter your message here',
+    // float button
+    floatButtonLogo: 'https://web-uat.fecredit.com.vn/wp-content/uploads/2022/12/ZALO_ChatbotProject_Avatar_512px.png',
+    floatButtonTooltip: 'Can I help you?',
+    floatButtonTooltipEnable: true,
+    // start screen
+    customerLogo: 'https://chatbot-tools.fpt.ai/livechat-builder/img/bot.png',
+    customerWelcomeText: 'Please input your name',
+    customerButtonText: 'Start',
+    prefixEnable: false,
+    prefixType: 'radio',
+    prefixOptions: ["Anh", "Ch?"],
+    prefixPlaceholder: 'Danh xung',
+    // custom css
+    css: ''
+}
+// Get bot code from url if FptAppCode is empty
+if (!FptAppCode) {
+    let appCodeFromHash = window.location.hash.substr(1)
+    if (appCodeFromHash.length === 32) {
+        FptAppCode = appCodeFromHash
+    }
+}
+// Set Configs
+let FptLiveChatConfigs = {
+    appName: FptAppName,
+    appCode: FptAppCode,
+    themes: '',
+    styles: CustomStyles
+}
+// Append Script
+let FptLiveChatScript = document.createElement('script')
+FptLiveChatScript.id = 'fpt_ai_livechat_script'
+FptLiveChatScript.src = liveChatBaseUrl + '/static/fptai-livechat.js'
+document.body.appendChild(FptLiveChatScript)
+// Append Stylesheet
+let FptLiveChatStyles = document.createElement('link')
+FptLiveChatStyles.id = 'fpt_ai_livechat_script'
+FptLiveChatStyles.rel = 'stylesheet'
+FptLiveChatStyles.href = liveChatBaseUrl + '/static/fptai-livechat.css'
+document.body.appendChild(FptLiveChatStyles)
+// Init
+FptLiveChatScript.onload = function() {
+    fpt_ai_render_chatbox(FptLiveChatConfigs, liveChatBaseUrl, LiveChatSocketUrl)
+}
+</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+    function logBehaviour(opt={}) {
+        axios.post('/behaviours/activity.php', {
+            event_name: opt.eventName ?? '',
+            customer_id: opt.userId ?? '',
+            visitor_id: opt.visitorId ?? '',
+            event_source: 'website',
+            params: {
+                id: opt.id,
+                name: $.trim(opt.name),
+                url: $('meta[property="og:url"]').attr('content'),
+                image: $('meta[property="og:image"]').attr('content'),
+                description: $('meta[property="og:description"]').attr('content'),
+                category: opt.category ?? '',
+                loan_amount: opt.loanAmount ?? 0,
+                loan_tenure: opt.loanTenure ?? 0,
+                document_type: opt.documentType ?? '',
+                installment_payment: opt.installmentPayment ?? 0,
+                mobile: opt.mobile ?? '',
+            }
+        })
+            .then((res) => {
+                console.log("RESPONSE RECEIVED: ", res);
+            })
+            .catch((err) => {
+                console.log("AXIOS ERROR: ", err);
+            });
+    }
+
+    let userIdB = webPushManagerAPI.getUserId();
+    let responsysUserIdB;
+    let hashB;
+    if(userIdB == '' || !userIdB) {
+        hashB = CryptoJS.SHA256('');
+        userIdB = hashB.toString(CryptoJS.enc.Base64);
+        responsysUserIdB = webPushManagerAPI.getUserId();
+        if (userIdB !== responsysUserIdB) {
+            webPushManagerAPI.setUserId(userIdB);
+        }
+    }
+
+    const visitorId = webPushManagerAPI.getVisitorId();
+    let eventName = "ProductApply";
+    const siteName = $('meta[property="og:site_name"]').attr('content');
+    let name = $('meta[property="og:title"]').attr('content');
+    name = name.replace(` - ${siteName}`, '');
+    name = name.replace(siteName, '');
+    let category = $('meta[property="adx:sections"]').attr('content');
+
+    if(eventName === 'NewsView') {
+        if(category === 'Tin Tức') {
+            const breadcrumbs = $('#breadcrumbs a');
+            $.each(breadcrumbs, function(idx, el){
+                category = $(el).html();
+            })
+        } else {
+            eventName = 'PageView';
+        }
+    }
+    if(eventName !== 'ProductApply') {
+        logBehaviour({
+            // required field
+            userId: userIdB,
+            visitorId: visitorId,
+            eventName: eventName,
+            // params addon
+            id: "",
+            name: name,
+        });
+    } else {
+        let loanAmount = 0;
+        let loanTenure = 0;
+        let fnBehaviour = null;
+        // 2.7.1
+        $("form.loan-form input[name=home_loan_money], form.loan-form input[name=home_loan_time], form.loan-form input[name=cbx-type-loan], form.loan-form input[name=loan_identify], form.loan-form input[name=loan_phone]").bind("change", function() {
+            loanAmount = $('input[name=home_loan_money]').val();
+            loanTenure = $('input[name=home_loan_time]').val();
+            const loanType = $('input[name=cbx-type-loan]:checked').val();
+
+            let documentType = 'Sao kê ngân hàng';
+            switch(loanType) {
+                case 'PL02':
+                    documentType = 'Cà vẹt xe máy chính chủ';
+                    break;
+                case 'PL03':
+                    documentType = 'Hóa đơn điện chủ hộ';
+                    break;
+                case 'PL04':
+                    documentType = 'Hợp đồng bảo hiểm nhân thọ';
+                    break;
+                default:
+            }
+            let nationalId = $('input[name=loan_identify]').val();
+            let mobile = $('input[name=loan_phone]').val();
+            clearTimeout(fnBehaviour);
+            fnBehaviour = setTimeout(() => {
+                const tmpMobile = mobile;
+                if($.trim(nationalId) != '' && $.trim(mobile) != '') {
+                    // reset current user
+                    webPushManagerAPI.resetUserId();
+
+                    // register user by national ID
+                    hashB = CryptoJS.SHA256(nationalId);
+                    userIdB = hashB.toString(CryptoJS.enc.Base64);
+                    responsysUserIdB = webPushManagerAPI.getUserId();
+                    if (userIdB !== responsysUserIdB) {
+                        webPushManagerAPI.setUserId(userIdB);
+                    }
+                    mobile = '';
+                }
+                if(loanAmount > 0 && loanTenure > 0) {
+                    const tmpLoanAmount = loanAmount;
+                    const tmpLoanTenure = loanTenure;
+                    let installmentPayment = $('.result-money span.number_value').html();
+                    installmentPayment = installmentPayment.replace(/\,/g, '');
+
+                    // reset
+                    loanAmount = 0;
+                    loanTenure = 0;
+
+                    logBehaviour({
+                        id: "",
+                        name: name,
+                        userId: userIdB,
+                        visitorId: visitorId,
+                        eventName: eventName,
+                        loanAmount: tmpLoanAmount,
+                        loanTenure: tmpLoanTenure,
+                        documentType: documentType,
+                        installmentPayment: installmentPayment,
+                        mobile: tmpMobile,
+                    });
+                }
+            }, 3000);
+        });
+        // 2.7.2
+        $("form.landing-form input[name=loan_identify], form.landing-form input[name=loan_phone]").bind("change", function() {
+            let nationalId = $('input[name=loan_identify]').val();
+            let mobile = $('input[name=loan_phone]').val();
+
+            clearTimeout(fnBehaviour);
+            fnBehaviour = setTimeout(() => {
+                if($.trim(nationalId) != '' && $.trim(mobile) != '') {
+                    const tmpMobile = mobile;
+
+                    // reset current user
+                    webPushManagerAPI.resetUserId();
+
+                    // register user by national ID
+                    hashB = CryptoJS.SHA256(nationalId);
+                    userIdB = hashB.toString(CryptoJS.enc.Base64);
+                    responsysUserIdB = webPushManagerAPI.getUserId();
+                    if (userIdB !== responsysUserIdB) {
+                        webPushManagerAPI.setUserId(userIdB);
+                    }
+
+                    // reset
+                    nationalId = '';
+                    mobile = '';
+
+                    logBehaviour({
+                        id: "",
+                        name: name,
+                        userId: userIdB,
+                        visitorId: visitorId,
+                        eventName: eventName,
+                        mobile: tmpMobile,
+                    });
+                }
+            }, 3000);
+        });
+    }
+</script>
+<!--<script type='text/javascript' id='rsyswpsdk' src='https://api.pushio.com/webpush/sdk/wpIndex_min.js' wpconfig = '{"appserviceKey":"BAzRrmBLYECbIakrxou4aXnhlfF1FkasGNJddLxMy7gyli3-9madgJ6NJE1zweHQAmuUbJgcqM7QOh2yFIYzbd0=","apiKey":"ABEjMG4vAjBkyrHdkmot4g2PQ","accountToken":"ABEtqAqQ4K843bc6hSQQTqRpA","appver":"0.0.0","apiHost":"https://vjr1qya-webpush.oraclersys.com","lazy":false}'></script>-->
+<div class="subcribe-footer-banner" style="background-color: #008848">
+
+    <a href="#" class="subcribe-btn">
+        <img class="hidden-mobile" src="https://fecredit.com.vn/wp-content/uploads/2022/02/subcribe-banner_1440x70.png" alt="">
+        <img class="hidden-desktop" src="https://fecredit.com.vn/wp-content/uploads/2022/02/subcribe-banner_640x128.png" alt="">
+    </a>
+
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("fm").querySelectorAll(".palceholder");
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+    }
+    $(document).ready(function() {
+        $('.subcribe-btn').on('click', function(e) {
+            $('body').toggleClass('mmenu-active');
+            e.preventDefault();
+            document.getElementById("body-form").style.display = "block";
+            myFunction();
+            document.getElementById("body-false").style.display = "none";
+            document.getElementById("body-success").style.display = "none";
+
+            document.getElementById('name-err').innerText = "";
+            document.getElementById('phone-err').innerText = "";
+            document.getElementById('email-err').innerText = "";
+            document.getElementById('errorCaptcha').innerText = "";
+            document.getElementById('SUBSCRIBE_NAME').value = "";
+            document.getElementById('EMAIL_ADDRESS_').value = "";
+            document.getElementById('MOBILE_NUMBER_').value = "";
+        });
+
+        $('.subcribe-overlay, .subcribe-close').on('click', function(e) {
+            $('body').removeClass('mmenu-active');
+            e.preventDefault();
+        });
+    });
+</script>
+<script>
+    $('.palceholder').click(function() {
+        $(this).siblings('input').focus();
+    });
+    $('.form-control').focus(function() {
+        $(this).siblings('.palceholder').hide();
+    });
+    $('.form-control').blur(function() {
+        var $this = $(this);
+        if ($this.val().length == 0)
+            $(this).siblings('.palceholder').show();
+    });
+    $('.form-control').blur();
+</script>
+<script>
+    function validatePhone(txtPhone) {
+        var a = txtPhone;
+        //var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+        var filter = /^((\+?84)|0)(\d{2,3}\d{4}\d{3})$/
+        if (filter.test(a)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function validatePhoneMore(txtPhone) {
+        var a = txtPhone.substring(0, 3);
+        var arrayValid = ["086", "096", "097", "098", "032", "033", "034", "035", "036", "037", "038", "039", "088", "091", "094", "083", "084", "085", "081", "082", "089", "090", "093", "070", "079", "077", "076", "078", "092", "056", "058", "099", "059"];
+        var index = $.inArray(a, arrayValid);
+        if (index >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function ValidateEmail(mail) {
+        return (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+    }
+    $('#submit_form').on('click', function(event) {
+        event.preventDefault();
+        event.preventDefault();
+        var today = new Date();
+        var date = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date + ' ' + time;
+        var name = $('#SUBSCRIBE_NAME').val();
+        var email = $('#EMAIL_ADDRESS_').val();
+        var phone = $('#MOBILE_NUMBER_').val();
+        var SUBSCRIBE_SOURCE = $('#SUBSCRIBE_SOURCE').val();
+        var SUBSCRIBE_URL = $('meta[property="og:url"]').attr('content');
+        var SUBSCRIBE_DATE = dateTime;
+        var ri = $('#_ri_').val();
+        var ei = $('#_ei_').val();
+        var di = $('#_di_').val();
+        let result = phone.split("");
+        result[0] = "84";
+        let newPhoneNumber = result.join("");
+
+        if (!validatePhone(phone) || !validatePhoneMore(phone) || !ValidateEmail(email)) {
+            if (name.length < 1) {
+                document.getElementById('name-err').innerText = "(*) Vui lòng nhập Họ và Tên !";
+            } else {
+                document.getElementById('name-err').innerText = "";
+            }
+            if (!validatePhone(phone) || !validatePhoneMore(phone) || !(phone.length == 10)) {
+                document.getElementById('phone-err').innerText = "(*) Vui lòng nhập số điện thoại hợp lệ !"
+            } else {
+                document.getElementById('phone-err').innerText = ""
+            }
+            if (!ValidateEmail(email)) {
+                document.getElementById('email-err').innerText = "(*) Vui lòng kiểm tra và nhập email hợp lệ !";
+            } else {
+                document.getElementById('email-err').innerText = "";
+            }
+            var recaptcha = $("#g-recaptcha-response").val();
+            if (recaptcha === "") {
+                document.getElementById('errorCaptcha').innerText = "(*) Vui lòng chọn captcha !";
+            } else {
+                document.getElementById('errorCaptcha').innerText = "";
+            }
+        } else {
+            console.log(name, email, newPhoneNumber, SUBSCRIBE_SOURCE, SUBSCRIBE_URL, SUBSCRIBE_DATE, ri, ei, di);
+            document.getElementById('name-err').innerText = "";
+            document.getElementById('phone-err').innerText = "";
+            document.getElementById('email-err').innerText = "";
+            document.getElementById('errorCaptcha').innerText = "";
+
+            $("#submit_form").addClass('disabled');
+            $('input[name=MOBILE_NUMBER_]').val(newPhoneNumber);
+            $('input[name=SUBSCRIBE_URL]').val($('meta[property="og:url"]').attr('content'));
+            $('input[name=SUBSCRIBE_DATE]').val(SUBSCRIBE_DATE);
+            $('form.frm-general').submit();
+        }
+        return false;
+    });
+</script></body>
+
+</html>
